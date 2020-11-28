@@ -5,24 +5,24 @@
     <div class="container" ng-show="signupC.submitError">An Error occured during the proccess, check your form and submit again !</div>
     <div class="form-group">
       <label for="firstname" >First Name :</label>
-      <input type="text" class="form-control" name="Firstname" id="firstname" ng-change="signupC.changeviewer()" ng-model="signupC.firstname" ng-pattern="/^\D+$/"  required>
+      <input type="text" class="form-control" name="Firstname" id="firstname"  ng-model="signupC.firstname" ng-pattern="/^\D+$/"  required>
     </div>
     <div class="form-group">
       <label for="lastname">Last Name :</label>
-      <input type="text" class="form-control" name="Lastname" id="lastname" ng-change="signupC.changeviewer()" ng-model="signupC.lastname" ng-pattern="/^\D+$/"  required>
+      <input type="text" class="form-control" name="Lastname" id="lastname"  ng-model="signupC.lastname" ng-pattern="/^\D+$/"  required>
     </div>
     <div class="form-group">
       <label for="emailaddress">Email Address :</label>
-      <input type="email" class="form-control" name="Emailaddress" id="emailaddress" ng-change="signupC.changeviewer()"  ng-model="signupC.email" ng-pattern="/^.*@.*[.].*$/"  required>
+      <input type="email" class="form-control" name="Emailaddress" id="emailaddress"  ng-model="signupC.email" ng-pattern="/^.*@.*[.].*$/"  required>
     </div>
     <div class="form-group">
       <label for="phonenumber">Phone Number :</label>
-      <input type="tel" class="form-control" name="Phonenumber" id="phonenumber" ng-change="signupC.changeviewer()" ng-model="signupC.phonenumber" ng-pattern="/^\d+$/"  required>
+      <input type="tel" class="form-control" name="Phonenumber" id="phonenumber"  ng-model="signupC.phonenumber" ng-pattern="/^\d+$/"  required>
     </div>
     <div class="form-group">
-      <label for="shortnameforsignup">Short Name :</label>
+      <label for="shortnameforsignup">Food Item Short Name :</label>
       <input type="text" class="form-control" name="Shortname" id="shortnameforsignup" ng-model="signupC.cat" ng-init="A1" required novalidate>
-      <div class="container" ng-show="signupC.submitcatError == true">This Category Doesn't Exist !Check for misspell and submit again!</div>
+      <div class="container" ng-show="signupC.submitcatError == true">This Item Doesn't Exist !Check for misspell and submit again!</div>
     </div>
     <div class="form-group">
       <label for="submit">Submit :</label>
