@@ -1,0 +1,21 @@
+<div class="container" ng-if='savedinfoC.isregistered == true'>
+  <label for="sifirstname">First Name :</label>{{savedinfoC.firstname}}
+  <br>
+  <label for="silastname">Last Name :</label>{{savedinfoC.lastname}}
+  <br>
+  <label for="siemail">Email :</label>{{savedinfoC.email}}
+  <br>
+  <label for="siphonenumber">Phone Number :</label>{{savedinfoC.phonenumber}}
+</div>
+<div ng-show="savedinfoC.isregistered == false">
+  Not Signed Up Yet. <a href="#" ui-sref="signup">Sign up Now!</a>
+</div>
+<div class="container">
+    <div class="card">
+      <img class="card-img-top" ng-src="{{savedinfoC.imgageaddress}}" alt="{{savedinfoC.favcatItem.name}}">
+      <div class="card-body">
+        <h3 class="card-title">{{savedinfoC.favcatItem.name}}</h3>
+        <p class="card-text">{{savedinfoC.favcatItem.description}}</p>
+      </div>
+    </div>
+</div>

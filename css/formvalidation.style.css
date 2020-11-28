@@ -1,0 +1,12 @@
+.ng-touched.ng-valid {
+  background: rgba(17, 233, 5, 0.33);
+  color:white;
+}
+.ng-touched.ng-invalid {
+  background: rgba(233, 59, 5, 0.13);
+  color:white;
+}
+#shortnameforsignup{
+  color:black;
+  background-color: white;
+}
