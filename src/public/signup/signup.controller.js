@@ -14,8 +14,8 @@
       return finder;
     };
     con.register = function(){
-      con.validateShortItem(con.cat).then(function(response){
-        var parameters = {'firstname': con.firstname,'lastname': con.lastname,'email': con.email ,'phonenumber': con.phonenumber,'favcat': con.cat};
+      con.validateShortItem(con.cat.toUpperCase()).then(function(response){
+        var parameters = {'firstname': con.firstname,'lastname': con.lastname,'email': con.email ,'phonenumber': con.phonenumber,'favcat': con.cat.toUpperCase()};
 
         if (response == true){
           MySavedInfoService.saveInfo(parameters);
